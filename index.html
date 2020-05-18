@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>myCanvas</title>
+	</head>
+
+	<body>
+		<canvas id="canvas" width="300" height="300"></canvas>
+		<div class="icon-box">
+			<svg id="pen" class="icon active" aria-hidden="true">
+				<use xlink:href="#icon-pen"></use>
+			</svg>
+			<svg id="eraser" class="icon" aria-hidden="true">
+				<use xlink:href="#icon-eraser"></use>
+			</svg>
+			<svg id="bin" class="icon" aria-hidden="true">
+				<use xlink:href="#icon-bin"></use>
+			</svg>
+			<svg id="save" class="icon" aria-hidden="true">
+				<use xlink:href="#icon-download"></use>
+			</svg>
+			<ol>
+				<li id="black" class="color selected"></li>
+				<li id="red" class="color"></li>
+				<li id="yellow" class="color"></li>
+			</ol>
+			<ul>
+				<li id="thin" class="penWidth"></li>
+				<li id="thick" class="penWidth"></li>
+			</ul>
+		</div>
+	</body>
+	<script src="./script.js"></script>
+	<script src="//at.alicdn.com/t/font_607277_m4bbq842u51att9.js"></script>
+</html>
